@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "Image": "https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/games/fob/640/V.jpg",
+        "ImageAlt": "Imagem da capa do jogo GTA 5"
+      },
+      {
+        "id": 2,
+        "Image": "https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/games/fob/640/GTAOnline.jpg",
+        "ImageAlt": "Imagem da capa do jogo GTA Online"
+      },
+      {
+        "id": 3,
+        "Image": "https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/games/fob/640/reddeadredemption2.jpg",
+        "ImageAlt": "Imagem da capa do jogo RedDead Redemption 2"
+      },
+      {
+        "id": 4,
+        "Image": "https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/games/fob/640/reddeadonline.jpg",
+        "ImageAlt": "Imagem da capa do jogo RedDead Redemption 2 Oline"
+      }
+]
