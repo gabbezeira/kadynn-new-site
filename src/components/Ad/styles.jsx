@@ -109,8 +109,7 @@ export const AdContainer = styled.div`
 
   /* Media Query for Mobile Devices */
   @media (max-width: 640px) {
-    flex-direction: column;
-    flex-direction: column-reverse;
+    flex-direction: column-reverse !important;
     gap: 1.75rem;
     padding: 1.5rem;
 
@@ -167,7 +166,7 @@ export const AdContainer = styled.div`
 
   /* Media Query for low resolution  Tablets, Ipads */
   @media (min-width: 641px) and (max-width: 767px) {
-    flex-direction: row;
+    flex-direction: column-reverse !important;
     justify-content: center;
     gap: 1.75rem;
     padding: 1.5rem;
