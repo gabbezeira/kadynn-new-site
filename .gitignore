@@ -1,4 +1,5 @@
 
+*.DS_Store
 src/.DS_Store
 src/components/.DS_Store
 src/assets/images/banner-ad/.DS_Store
