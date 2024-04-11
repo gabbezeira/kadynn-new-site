@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import "../../styles/index.css"
+import styled from "styled-components";
+import "../../styles/index.css";
 
 export const MenuContainer = styled.div`
   display: flex;
@@ -22,11 +22,11 @@ export const MenuContainer = styled.div`
     gap: 5rem;
 
     .link-image {
-        display: block;
-        text-decoration: none;
-        width: auto;
-        height: auto;
-        user-select: none;
+      display: block;
+      text-decoration: none;
+      width: auto;
+      height: auto;
+      user-select: none;
     }
 
     .menu-text-group {
@@ -37,14 +37,13 @@ export const MenuContainer = styled.div`
       user-select: none;
 
       li {
-
         .link {
-            color: var(--white-color);
-            font-weight: 500;
-            font-size: 1rem;
-            text-decoration: none;
-            cursor: pointer;
-            transition: all 0.2s;
+          color: var(--white-color);
+          font-weight: 500;
+          font-size: 1rem;
+          text-decoration: none;
+          cursor: pointer;
+          transition: all 0.2s;
 
           &:hover {
             color: var(--secondary-color);
@@ -80,19 +79,20 @@ export const MenuContainer = styled.div`
     }
   }
 
-  @media(max-width: 640px){
+  @media (max-width: 640px) {
     justify-content: center;
-       .menu-left-content {
-          justify-content: center;
-          gap: none;
 
-          .link-image {
-            display: none;
-          }
-       }
+    .menu-left-content {
+      justify-content: center;
+      gap: none;
 
-       .menu-button {
-          display: none;
-       }
+      .link-image {
+        display: none;
+      }
     }
+
+    .menu-button {
+      display: none;
+    }
+  }
 `;

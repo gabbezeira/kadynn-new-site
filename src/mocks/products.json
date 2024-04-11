@@ -1,50 +1,50 @@
 [
-    {
-        "id": 1,
-        "title": "Camisa GTA VI",
-        "price": "99,90",
-        "Image": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-loyi66x35s2d08"
-      },
-      {
-        "id": 2,
-        "title": "Moletom RDR2",
-        "price": "239,90",
-        "Image": "https://down-br.img.susercontent.com/file/br-11134201-7qukw-leodjfpy1apsc8"
-      },
-      {
-        "id": 3,
-        "title": "Caneca GTA V",
-        "price": "59,90",
-        "Image": "https://down-br.img.susercontent.com/file/e4209ef9ec5ee2fdf89c20b94c121628"
-      },
-      {
-        "id": 4,
-        "title": "Caneca RDR2",
-        "price": "59,90",
-        "Image": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lrnarnj23db891"
-      },
-      {
-        "id": 5,
-        "title": "Quadro decorativo RDR2",
-        "price": "99,90",
-        "Image": "https://http2.mlstatic.com/D_NQ_NP_904095-MLB26113105688_102017-O.webp"
-      },
-      {
-        "id": 6,
-        "title": "Chaveiro Rockstar",
-        "price": "15,90",
-        "Image": "https://down-br.img.susercontent.com/file/sg-11134201-7rbk4-lmzc94a5ntbtad"
-      },
-      {
-        "id": 7,
-        "title": "Quadro decorativo GTA V",
-        "price": "59,90",
-        "Image": "https://http2.mlstatic.com/D_NQ_NP_654578-MLB71785296439_092023-O.webp"
-      },
-      {
-        "id": 8,
-        "title": "RDR2 (PS4)",
-        "price": "159,90",
-        "Image": "https://down-br.img.susercontent.com/file/br-11134201-7r98o-lpqtla72g0fbf5"
-      }
+  {
+    "id": 1,
+    "title": "Camisa GTA VI",
+    "price": "99,90",
+    "Image": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-loyi66x35s2d08"
+  },
+  {
+    "id": 2,
+    "title": "Moletom RDR2",
+    "price": "239,90",
+    "Image": "https://down-br.img.susercontent.com/file/br-11134201-7qukw-leodjfpy1apsc8"
+  },
+  {
+    "id": 3,
+    "title": "Caneca GTA V",
+    "price": "59,90",
+    "Image": "https://down-br.img.susercontent.com/file/e4209ef9ec5ee2fdf89c20b94c121628"
+  },
+  {
+    "id": 4,
+    "title": "Caneca RDR2",
+    "price": "59,90",
+    "Image": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lrnarnj23db891"
+  },
+  {
+    "id": 5,
+    "title": "Quadro decorativo RDR2",
+    "price": "99,90",
+    "Image": "https://http2.mlstatic.com/D_NQ_NP_904095-MLB26113105688_102017-O.webp"
+  },
+  {
+    "id": 6,
+    "title": "Chaveiro Rockstar",
+    "price": "15,90",
+    "Image": "https://down-br.img.susercontent.com/file/sg-11134201-7rbk4-lmzc94a5ntbtad"
+  },
+  {
+    "id": 7,
+    "title": "Quadro decorativo GTA V",
+    "price": "59,90",
+    "Image": "https://http2.mlstatic.com/D_NQ_NP_654578-MLB71785296439_092023-O.webp"
+  },
+  {
+    "id": 8,
+    "title": "RDR2 (PS4)",
+    "price": "159,90",
+    "Image": "https://down-br.img.susercontent.com/file/br-11134201-7r98o-lpqtla72g0fbf5"
+  }
 ]
