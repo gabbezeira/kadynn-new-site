@@ -16,6 +16,7 @@ export const Container = styled.div`
     font-weight: 600;
     font-size: 1.875rem;
     color: var(--white-color);
+    text-align: center;
   }
 
   .plataform-buttons {
