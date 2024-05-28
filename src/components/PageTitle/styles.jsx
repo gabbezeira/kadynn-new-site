@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import "../../styles/index.css";
+import styled from 'styled-components'
+import '../../styles/index.css'
 
 export const Container = styled.div`
   display: flex;
@@ -12,11 +12,10 @@ export const Container = styled.div`
   width: 100%;
 
   .title {
-    font-family: "Helvetica", sans-serif;
+    font-family: 'Helvetica', sans-serif;
     font-weight: 600;
     font-size: 1.875rem;
     color: var(--white-color);
-    text-align: center;
   }
 
   .plataform-buttons {
@@ -36,7 +35,7 @@ export const Container = styled.div`
       border: 0.0313rem solid var(--stroke-color);
       border-radius: 1.125rem;
 
-      font-family: "Poppins", sans-serif;
+      font-family: 'Poppins', sans-serif;
       font-size: auto;
       font-weight: 500;
 
@@ -73,4 +72,4 @@ export const Container = styled.div`
     flex-direction: column;
     gap: 2rem;
   }
-`;
+`

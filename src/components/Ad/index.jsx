@@ -1,6 +1,7 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable react/prop-types */
-import { AdContainer } from "./styles";
-import "../../styles/index.css";
+import { AdContainer } from './styles'
+import '../../styles/index.css'
 
 export function Advertising({
   topTitle,
@@ -14,15 +15,14 @@ export function Advertising({
   adBackground,
   adImagePosition,
 }) {
-  if (adImagePosition == "left") {
-    adImagePosition = "row-reverse";
-  } else if (adImagePosition == "right") {
-    adImagePosition = "row";
+  if (adImagePosition === 'left') {
+    adImagePosition = 'row-reverse'
+  } else if (adImagePosition === 'right') {
+    adImagePosition = 'row'
   }
 
   return (
     <AdContainer
-      id="loja"
       style={{
         backgroundImage: `url(${adBackground})`,
         flexDirection: `${adImagePosition}`,
@@ -44,5 +44,5 @@ export function Advertising({
         <img className="image" src={adImage} />
       </div>
     </AdContainer>
-  );
+  )
 }

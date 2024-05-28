@@ -1,10 +1,9 @@
-import styled from "styled-components";
-import "../../styles/index.css";
+import styled from 'styled-components'
+import '../../styles/index.css'
 
 export const Container = styled.div`
   height: auto;
   width: 100%;
-  margin-bottom: 8.125rem;
 
   .content {
     display: flex;
@@ -57,4 +56,4 @@ export const Container = styled.div`
       }
     }
   }
-`;
+`

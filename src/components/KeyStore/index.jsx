@@ -1,13 +1,13 @@
-import { useState } from "react";
-import { Container } from "./styles";
-import { PageTitle } from "../PageTitle";
-import { VideoModal } from "./KeyVideoModal";
-import { KeyCard } from "./KeyCard";
-import { KeySquare } from "lucide-react";
-import GamesKeys from "../../mocks/keys.json";
+import { useState } from 'react'
+import { Container } from './styles'
+import { PageTitle } from '../PageTitle'
+import { VideoModal } from './KeyVideoModal'
+import { KeyCard } from './KeyCard'
+import { KeySquare } from 'lucide-react'
+import GamesKeys from '../../mocks/keys.json'
 
 export function KeyStore() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
   return (
     <Container id="games">
       <PageTitle title="Compre seu jogo conosco" plataformButtons="false" />
@@ -37,7 +37,11 @@ export function KeyStore() {
               <KeySquare className="icon" />
               <strong>Ativação</strong> Para ativar a key você deve resgatar ela
               no site
-              <a target="_blank" href="https://ww.redeem.microsoft.com">
+              <a
+                target="_blank"
+                href="https://ww.redeem.microsoft.com"
+                rel="noreferrer"
+              >
                 redeem.microsoft.com
               </a>
               utilizando uma<a href="https://www.tunnelbear.com">VPN</a> na
@@ -54,5 +58,5 @@ export function KeyStore() {
         </div>
       </div>
     </Container>
-  );
+  )
 }

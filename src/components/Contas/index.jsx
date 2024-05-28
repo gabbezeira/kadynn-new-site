@@ -1,7 +1,7 @@
-import { Container } from "./styles";
-import GamesCard from "../../mocks/games-account.json";
-import { Card } from "./Card";
-import { PageTitle } from "../PageTitle";
+import { Container } from './styles'
+import GamesCard from '../../mocks/games-account.json'
+import { Card } from './Card'
+import { PageTitle } from '../PageTitle'
 
 export function Contas() {
   return (
@@ -24,5 +24,5 @@ export function Contas() {
         </a>
       </div>
     </Container>
-  );
+  )
 }

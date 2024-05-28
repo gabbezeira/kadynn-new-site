@@ -1,10 +1,10 @@
-import styled from "styled-components";
-import "../../styles/index.css";
+import styled from 'styled-components'
+import '../../styles/index.css'
 
 export const Container = styled.div`
   width: 100%;
   height: 40.625rem;
-  margin: 5rem 0rem;
+  margin: 5rem 0rem 0rem 0rem;
   pointer-events: none;
   user-select: none;
 
@@ -15,4 +15,4 @@ export const Container = styled.div`
     background-position: center;
     background-size: cover;
   }
-`;
+`

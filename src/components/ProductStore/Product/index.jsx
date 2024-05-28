@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Container } from "./styles";
+import { Container } from './styles'
 
 export function ProductCard({ productTitle, productPrice, productImage }) {
   return (
@@ -14,10 +14,10 @@ export function ProductCard({ productTitle, productPrice, productImage }) {
           <input
             className="priceButton"
             type="button"
-            value={"R$" + productPrice}
+            value={'R$' + productPrice}
           />
         </a>
       </div>
     </Container>
-  );
+  )
 }

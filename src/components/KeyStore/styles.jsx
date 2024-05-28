@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import "../../styles/index.css";
+import styled from 'styled-components'
+import '../../styles/index.css'
 
 export const Container = styled.div`
   display: flex;
@@ -8,7 +8,7 @@ export const Container = styled.div`
   flex-wrap: wrap;
 
   align-items: center;
-  margin: 8.125rem 0rem;
+  margin: 0rem;
 
   .keysGroup {
     display: flex;
@@ -185,4 +185,4 @@ export const Container = styled.div`
       }
     }
   }
-`;
+`

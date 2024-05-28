@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
-import { Container } from "./styles";
+import { Container } from './styles'
 
 export function PageTitle({ title, plataformButtons }) {
-  if (plataformButtons == "true") {
-    plataformButtons = "flex";
-  } else if (plataformButtons == "false") {
-    plataformButtons = "none";
+  if (plataformButtons === 'true') {
+    plataformButtons = 'flex'
+  } else if (plataformButtons === 'false') {
+    plataformButtons = 'none'
   }
 
   return (
@@ -21,5 +21,5 @@ export function PageTitle({ title, plataformButtons }) {
         <li>PS5</li>
       </ul>
     </Container>
-  );
+  )
 }

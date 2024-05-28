@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import "../../styles/index.css";
+import styled from 'styled-components'
+import '../../styles/index.css'
 
 export const MenuContainer = styled.div`
   display: flex;
@@ -67,7 +67,7 @@ export const MenuContainer = styled.div`
     background-color: var(--secondary-color);
 
     color: var(--black-color);
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     font-weight: 600;
 
@@ -95,4 +95,4 @@ export const MenuContainer = styled.div`
       display: none;
     }
   }
-`;
+`

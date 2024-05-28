@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import "../../styles/index.css";
+import styled from 'styled-components'
+import '../../styles/index.css'
 
 export const AdContainer = styled.div`
   display: flex;
@@ -44,7 +44,7 @@ export const AdContainer = styled.div`
         font-weight: 500;
 
         b {
-          font-family: "Poppins", sans-serif;
+          font-family: 'Poppins', sans-serif;
           font-weight: 700;
         }
       }
@@ -166,7 +166,7 @@ export const AdContainer = styled.div`
 
   /* Media Query for low resolution  Tablets, Ipads */
   @media (min-width: 641px) and (max-width: 767px) {
-    flex-direction: column-reverse !important;
+    flex-direction: row;
     justify-content: center;
     gap: 1.75rem;
     padding: 1.5rem;
@@ -261,4 +261,4 @@ export const AdContainer = styled.div`
       }
     }
   }
-`;
+`

@@ -1,12 +1,12 @@
 /* eslint-disable react/prop-types */
-import { Container } from "./styles";
+import { Container } from './styles'
 
-export function Card({ cardImage, cardLink, cardAlt }) {
+export function Card(props) {
   return (
     <Container>
-      <a href={cardLink}>
-        <img src={cardImage} alt={cardAlt} />
+      <a href={props.cardLink}>
+        <img src={props.cardImage} alt={props.cardAlt} />
       </a>
     </Container>
-  );
+  )
 }

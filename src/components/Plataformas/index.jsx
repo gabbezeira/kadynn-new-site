@@ -1,10 +1,10 @@
-import { Container } from "./styles";
-import { PageTitle } from "../PageTitle";
+import { Container } from './styles'
+import { PageTitle } from '../PageTitle'
 
-import OneImage from "../../assets/images/plataforms/1.svg";
-import TwoImage from "../../assets/images/plataforms/2.svg";
-import ThreeImage from "../../assets/images/plataforms/3.svg";
-import ForImage from "../../assets/images/plataforms/4.svg";
+import OneImage from '../../assets/images/plataforms/1.svg'
+import TwoImage from '../../assets/images/plataforms/2.svg'
+import ThreeImage from '../../assets/images/plataforms/3.svg'
+import ForImage from '../../assets/images/plataforms/4.svg'
 
 export function Plataformas() {
   return (
@@ -35,5 +35,5 @@ export function Plataformas() {
         </ul>
       </div>
     </Container>
-  );
+  )
 }

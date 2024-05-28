@@ -1,11 +1,11 @@
-import { ProductCard } from "./Product";
-import Products from "../../mocks/products.json";
-import { Container } from "./styles";
-import { PageTitle } from "../PageTitle";
+import { ProductCard } from './Product'
+import Products from '../../mocks/products.json'
+import { Container } from './styles'
+import { PageTitle } from '../PageTitle'
 
 export function Store() {
   return (
-    <Container>
+    <Container id="loja">
       <PageTitle title="Loja - Produtos Fisicos" plataformButtons="false" />
       <div className="productGrid">
         {Products.map((item) => (
@@ -19,5 +19,5 @@ export function Store() {
         ))}
       </div>
     </Container>
-  );
+  )
 }

@@ -1,16 +1,16 @@
-import { MenuContainer } from "./styles";
-import { HashLink as Link } from "react-router-hash-link";
-import Logo from "../../assets/images/logo.svg";
+import { MenuContainer } from './styles'
+import { HashLink as Link } from 'react-router-hash-link'
+import Logo from '../../assets/images/logo.svg'
 
 export function Menu() {
   const scrollWithOffset = (el, offset) => {
-    const elementPosition = el.offsetTop - offset;
+    const elementPosition = el.offsetTop - offset
     window.scroll({
       top: elementPosition,
       left: 0,
-      behavior: "smooth",
-    });
-  };
+      behavior: 'smooth',
+    })
+  }
 
   return (
     <MenuContainer>
@@ -39,7 +39,7 @@ export function Menu() {
               className="link"
               to="#loja"
               smooth
-              scroll={(el) => scrollWithOffset(el, 350)}
+              scroll={(el) => scrollWithOffset(el, 140)}
             >
               Loja
             </Link>
@@ -49,7 +49,7 @@ export function Menu() {
               className="link"
               to="#games"
               smooth
-              scroll={(el) => scrollWithOffset(el, 160)}
+              scroll={(el) => scrollWithOffset(el, 140)}
             >
               Games
             </Link>
@@ -59,7 +59,7 @@ export function Menu() {
               className="link"
               to="#noticias"
               smooth
-              scroll={(el) => scrollWithOffset(el, 160)}
+              scroll={(el) => scrollWithOffset(el, 140)}
             >
               Notícias
             </Link>
@@ -68,5 +68,5 @@ export function Menu() {
       </div>
       <button className="menu-button">Fale com a gente</button>
     </MenuContainer>
-  );
+  )
 }
