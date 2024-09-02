@@ -11,6 +11,9 @@ export const Container = styled.li`
   height: 22.9375rem;
   width: 18.125rem;
 
+  padding: 1.125rem 0.875rem;
+  gap: 1rem;
+
   background-color: var(--black-color);
 
   border: 0.0313rem solid var(--stroke-color);
@@ -20,12 +23,16 @@ export const Container = styled.li`
   margin: 0;
 
   .cardImageLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
+    margin: 0;
 
     .cardImage {
-      height: 100%;
-      width: 100%;
+      height: 11.8125rem;
+      width: 18.0625rem;
 
       background-size: cover;
       background-position: center;
@@ -43,7 +50,6 @@ export const Container = styled.li`
     height: auto;
 
     gap: 1rem;
-    padding: 1.125rem 0.875rem;
 
     .cardHeader {
       display: flex;
