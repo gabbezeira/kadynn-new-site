@@ -14,7 +14,6 @@ export function Accounts() {
   const [currentPage, setCurrentPage] = useState(1)
   const itemsPerPage = 8
 
-  // Filtra as contas com base no jogo selecionado
   const filteredAccounts = selectedGame
     ? AccountsMock.filter((account) =>
         account.game.some((g) => g === selectedGame),
@@ -33,7 +32,7 @@ export function Accounts() {
   )
 
   useEffect(() => {
-    setCurrentPage(1) // Reinicia a página ao mudar o jogo selecionado
+    setCurrentPage(1)
   }, [selectedGame])
 
   return (

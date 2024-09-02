@@ -10,7 +10,6 @@ export function AccountsArea() {
   const navigate = useNavigate()
 
   const handleCardClick = (game) => {
-    // Se `game` for um array, você pode ajustar aqui para pegar o nome do jogo
     const gameName = Array.isArray(game) ? game[0] : game
     navigate(`/accounts?game=${encodeURIComponent(gameName)}`)
   }
@@ -22,11 +21,7 @@ export function AccountsArea() {
         <ul className="games-group">
           {GamesCard.map((item) => (
             <div key={item.id} onClick={() => handleCardClick(item.game)}>
-              <Card
-                cardImage={item.image}
-                cardLink="#"
-                cardAlt={item.imageAlt}
-              />
+              <Card cardImage={item.image} cardAlt={item.imageAlt} />
             </div>
           ))}
         </ul>

@@ -10,14 +10,14 @@ export const Container = styled.div`
   width: 100%;
   justify-content: start;
   background-color: var(--black-color);
-  box-sizing: border-box; /* Garante que o padding e a borda são incluídos nas dimensões totais do elemento */
+  box-sizing: border-box;
 
   .imageArea {
     height: 22.9375rem;
     width: auto;
-    flex-shrink: 0; /* Impede que a área da imagem encolha, garantindo que ela mantenha seu tamanho */
-    min-width: 20rem; /* Define uma largura mínima para a área da imagem */
-    max-width: 30rem; /* Define uma largura máxima para a área da imagem */
+    flex-shrink: 0;
+    min-width: 20rem;
+    max-width: 30rem;
 
     .image {
       width: 100%;
@@ -29,20 +29,21 @@ export const Container = styled.div`
   .content {
     display: flex;
     flex-direction: column;
-    flex: 1; /* Permite que o conteúdo ocupe o espaço restante */
+    flex: 1;
     overflow: hidden;
     gap: 1.5rem;
 
     .header {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: start;
       width: 100%;
 
       .texts {
         display: flex;
         flex-direction: column;
         gap: 0.25rem;
+        width: auto;
 
         .title {
           color: var(--white-color);
@@ -58,7 +59,8 @@ export const Container = styled.div`
       }
 
       .priceButton {
-        height: 2.5rem;
+        height: auto;
+        width: auto;
         padding: 0.3125rem 0.625rem;
         border-radius: 0.25rem;
         border: none;
