@@ -1,36 +1,31 @@
-/* eslint-disable react/prop-types */
-import { Container } from "./styles";
+import { Container } from './styles'
 
-export function KeyCard({
-  keyImage,
-  keyTitle,
-  keyPlataform,
-  keyLocate,
-  keyPrice,
-}) {
+export function KeyCard(props) {
   return (
     <Container>
       <img
         className="keyImage"
-        src={keyImage}
-        alt={keyTitle + " " + keyPlataform}
+        src={props.keyImage}
+        alt={props.keyTitle + ' ' + props.keyPlatform}
       />
       <div className="keyDetails">
         <div className="keyHeader">
-          <h1 className="keyTitle">{keyTitle + " " + `(${keyPlataform})`}</h1>
+          <h1 className="keyTitle">
+            {props.keyTitle + ' ' + `(${props.keyPlatform})`}
+          </h1>
         </div>
-        <p className="keyLocate">{keyLocate}</p>
+        <p className="keyLocate">{props.keyLocate}</p>
         <div className="keyFooter">
           <p className="priceText">A partir de</p>
           <a href="" className="keyPrice">
             <input
               className="priceButton"
               type="button"
-              value={"R$" + keyPrice}
+              value={'R$' + props.keyPrice}
             />
           </a>
         </div>
       </div>
     </Container>
-  );
+  )
 }

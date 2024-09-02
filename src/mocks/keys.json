@@ -3,7 +3,7 @@
     "id": 1,
     "image": "https://raw.githubusercontent.com/gabbezeira/kaddyn-images/0bd74ef93a1b514abe68d92fe6b724bce593e25c/gtav.svg",
     "title": "Grand Theft Auto V",
-    "plataform": "Xbox Series S|X",
+    "platform": "Xbox Series S|X",
     "locate": "Argentina",
     "price": "129,90"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "image": "https://raw.githubusercontent.com/gabbezeira/kaddyn-images/0bd74ef93a1b514abe68d92fe6b724bce593e25c/rdr2.svg",
     "title": "Red Dead Redemption 2 - Ultimate Edition",
-    "plataform": "Xbox One",
+    "platform": "Xbox One",
     "locate": "Argentina",
     "price": "79,90"
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "image": "https://raw.githubusercontent.com/gabbezeira/kaddyn-images/0bd74ef93a1b514abe68d92fe6b724bce593e25c/gtav-old.svg",
     "title": "Grand Theft Auto V",
-    "plataform": "Xbox One",
+    "platform": "Xbox One",
     "locate": "Argentina",
     "price": "49,90"
   }

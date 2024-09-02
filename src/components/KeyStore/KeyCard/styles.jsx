@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import "../../../styles/index.css";
+import styled from 'styled-components'
+import '@globalStyles/index.css'
 
 export const Container = styled.div`
   display: flex;
@@ -102,4 +102,4 @@ export const Container = styled.div`
       }
     }
   }
-`;
+`

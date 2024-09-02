@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import "../../../styles/index.css";
+import styled from 'styled-components'
+import '@globalStyles/index.css'
 
 export const Container = styled.div`
   position: fixed;
@@ -121,4 +121,4 @@ export const Container = styled.div`
       }
     }
   }
-`;
+`

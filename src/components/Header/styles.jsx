@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import '../../styles/index.css'
+import '@globalStyles/index.css'
 
 export const MenuContainer = styled.div`
   display: flex;

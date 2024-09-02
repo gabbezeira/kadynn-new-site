@@ -1,6 +1,6 @@
 import { MenuContainer } from './styles'
 import { HashLink as Link } from 'react-router-hash-link'
-import Logo from '../../assets/images/logo.svg'
+import Logo from '@assets/images/logo.svg'
 
 export function Menu() {
   const scrollWithOffset = (el, offset) => {
@@ -17,7 +17,7 @@ export function Menu() {
       <div className="menu-left-content">
         <Link
           className="link-image"
-          to="#"
+          to="/#"
           smooth
           scroll={(el) => scrollWithOffset(el, 160)}
         >
@@ -27,7 +27,7 @@ export function Menu() {
           <li>
             <Link
               className="link"
-              to="#contas"
+              to="/#contas"
               smooth
               scroll={(el) => scrollWithOffset(el, 160)}
             >
@@ -37,7 +37,7 @@ export function Menu() {
           <li>
             <Link
               className="link"
-              to="#loja"
+              to="/#loja"
               smooth
               scroll={(el) => scrollWithOffset(el, 140)}
             >
@@ -47,7 +47,7 @@ export function Menu() {
           <li>
             <Link
               className="link"
-              to="#games"
+              to="/#games"
               smooth
               scroll={(el) => scrollWithOffset(el, 140)}
             >
@@ -57,7 +57,7 @@ export function Menu() {
           <li>
             <Link
               className="link"
-              to="#noticias"
+              to="/#noticias"
               smooth
               scroll={(el) => scrollWithOffset(el, 140)}
             >
@@ -66,7 +66,7 @@ export function Menu() {
           </li>
         </ul>
       </div>
-      <button className="menu-button">Fale com a gente</button>
+      <button className="menu-button">Login</button>
     </MenuContainer>
   )
 }

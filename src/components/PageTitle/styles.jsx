@@ -18,7 +18,7 @@ export const Container = styled.div`
     color: var(--white-color);
   }
 
-  .plataform-buttons {
+  .platform-buttons {
     align-items: center;
     flex-wrap: wrap;
     gap: 1.25rem;
@@ -59,7 +59,7 @@ export const Container = styled.div`
     margin-bottom: 2rem;
     gap: 2rem;
 
-    .plataform-buttons {
+    .platform-buttons {
       justify-content: center;
       flex: 1;
       width: 100%;

@@ -2,21 +2,25 @@
   {
     "id": 1,
     "image": "https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/games/fob/640/V.jpg",
-    "imageAlt": "Imagem da capa do jogo GTA 5"
+    "imageAlt": "Imagem da capa do jogo GTA 5",
+    "game": "GTA 5"
   },
   {
     "id": 2,
     "image": "https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/games/fob/640/GTAOnline.jpg",
-    "imageAlt": "Imagem da capa do jogo GTA Online"
+    "imageAlt": "Imagem da capa do jogo GTA Online",
+    "game": "GTA 5"
   },
   {
     "id": 3,
     "image": "https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/games/fob/640/reddeadredemption2.jpg",
-    "imageAlt": "Imagem da capa do jogo RedDead Redemption 2"
+    "imageAlt": "Imagem da capa do jogo RedDead Redemption 2",
+    "game": "Red Dead Redemption 2"
   },
   {
     "id": 4,
     "image": "https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/games/fob/640/reddeadonline.jpg",
-    "imageAlt": "Imagem da capa do jogo RedDead Redemption 2 Oline"
+    "imageAlt": "Imagem da capa do jogo RedDead Redemption 2 Oline",
+    "game": "Red Dead Redemption 2"
   }
 ]

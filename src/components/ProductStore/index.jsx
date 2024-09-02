@@ -1,12 +1,12 @@
 import { ProductCard } from './Product'
-import Products from '../../mocks/products.json'
+import Products from '@/mocks/products.json'
 import { Container } from './styles'
-import { PageTitle } from '../PageTitle'
+import { PageTitle } from '@components/PageTitle'
 
 export function Store() {
   return (
     <Container id="loja">
-      <PageTitle title="Loja - Produtos Fisicos" plataformButtons="false" />
+      <PageTitle title="Loja - Produtos Fisicos" platformButtons="false" />
       <div className="productGrid">
         {Products.map((item) => (
           <div key={item.id}>

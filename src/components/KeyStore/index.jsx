@@ -1,16 +1,18 @@
 import { useState } from 'react'
 import { Container } from './styles'
-import { PageTitle } from '../PageTitle'
+import { PageTitle } from '@components/PageTitle'
+
 import { VideoModal } from './KeyVideoModal'
 import { KeyCard } from './KeyCard'
+
 import { KeySquare } from 'lucide-react'
-import GamesKeys from '../../mocks/keys.json'
+import GamesKeys from '@/mocks/keys.json'
 
 export function KeyStore() {
   const [open, setOpen] = useState(false)
   return (
     <Container id="games">
-      <PageTitle title="Compre seu jogo conosco" plataformButtons="false" />
+      <PageTitle title="Compre seu jogo conosco" platformButtons="false" />
 
       <div className="keysGroup">
         {GamesKeys.map((item) => (
@@ -18,7 +20,7 @@ export function KeyStore() {
             <KeyCard
               keyImage={item.image}
               keyTitle={item.title}
-              keyPlataform={item.plataform}
+              keyPlatform={item.platform}
               keyLocate={item.locate}
               keyPrice={item.price}
             />

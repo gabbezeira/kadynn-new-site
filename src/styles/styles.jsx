@@ -1,6 +1,12 @@
 import styled from 'styled-components'
 import './index.css'
 
+export const PageWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`
+
 export const Body = styled.div`
   display: flex;
   flex-direction: column;
