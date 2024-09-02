@@ -103,4 +103,24 @@ export const Container = styled.div`
       line-height: 1.5;
     }
   }
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+    padding: 1.5rem;
+
+    .imageArea {
+      height: 100%;
+      width: 100%;
+      flex-shrink: none;
+      min-width: auto;
+      max-width: auto;
+    }
+
+    .content {
+      .header {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+    }
+  }
 `
