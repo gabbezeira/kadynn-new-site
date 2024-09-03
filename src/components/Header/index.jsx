@@ -49,7 +49,7 @@ export function Menu() {
             >
               Contas
             </Link>
-            <Link
+            {/* <Link
               className="link"
               to="/#loja"
               smooth
@@ -72,7 +72,7 @@ export function Menu() {
               scroll={(el) => scrollWithOffset(el, 140)}
             >
               Notícias
-            </Link>
+            </Link> */}
           </nav>
         )}
       </div>
