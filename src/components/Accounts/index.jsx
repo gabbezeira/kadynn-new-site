@@ -23,9 +23,12 @@ export function Accounts() {
   useEffect(() => {
     const fetchAccounts = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/accounts', {
-          params: { platform: selectedPlatform },
-        })
+        const response = await axios.get(
+          'https://kadynn-api.vercel.app/accounts',
+          {
+            params: { platform: selectedPlatform },
+          },
+        )
         if (Array.isArray(response.data)) {
           setAccounts(response.data)
         } else {

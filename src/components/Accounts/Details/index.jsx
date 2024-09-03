@@ -14,7 +14,7 @@ export function DetailsPage() {
     const fetchProduct = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3001/accounts/${numericId}`,
+          `https://kadynn-api.vercel.app/accounts/${numericId}`,
         )
         if (response.data) {
           setProduct(response.data)
