@@ -1,7 +1,6 @@
 import React from 'react'
 import { Container } from './styles'
 import { useNavigate, Link } from 'react-router-dom'
-
 import GamesCard from '@/mocks/games-account.json'
 import { PageTitle } from '@components/PageTitle'
 import { Card } from './Card'
@@ -21,7 +20,11 @@ export function AccountsArea() {
         <ul className="games-group">
           {GamesCard.map((item) => (
             <div key={item.id} onClick={() => handleCardClick(item.game)}>
-              <Card cardImage={item.image} cardAlt={item.imageAlt} />
+              <Card
+                cardImage={item.image}
+                cardAlt={item.imageAlt}
+                cardTitle={item.game}
+              />
             </div>
           ))}
         </ul>

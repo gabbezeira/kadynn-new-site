@@ -18,7 +18,7 @@ export function Advertising(props) {
             {props.bottomTitle} <b>{props.bottomTitleValue}</b>
           </h2>
         </div>
-        <a href={props.buttonLink}>
+        <a href={props.buttonLink} target="_blank" rel="noreferrer">
           <input className="ad-button" type="button" value={props.buttonText} />
         </a>
       </div>

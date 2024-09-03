@@ -1,32 +1,30 @@
 import { Container } from './styles'
 import { PageTitle } from '@components/PageTitle'
-
-import {
-  OneImage,
-  TwoImage,
-  ThreeImage,
-  ForImage,
-} from '@assets/images/platforms'
+import PlatformsMock from '@/mocks/platforms.json'
+import { Card } from './Card'
+import { useNavigate } from 'react-router-dom'
 
 export function Platforms() {
-  const platforms = [
-    { image: OneImage, alt: 'Imagem da Plataforma 1', link: '#' },
-    { image: TwoImage, alt: 'Imagem da Plataforma 2', link: '#' },
-    { image: ThreeImage, alt: 'Imagem da Plataforma 3', link: '#' },
-    { image: ForImage, alt: 'Imagem da Plataforma 4', link: '#' },
-  ]
+  const navigate = useNavigate()
+
+  const handleCardClick = (platform) => {
+    const platformName = Array.isArray(platform) ? platform[0] : platform
+    navigate(`/accounts?platform=${encodeURIComponent(platformName)}`)
+  }
 
   return (
     <Container>
       <div className="content">
         <PageTitle title="Contas por Plataforma" platformButtons="false" />
         <ul className="games-group">
-          {platforms.map((platform, index) => (
-            <li key={index}>
-              <a href={platform.link} className="Link">
-                <img src={platform.image} alt={platform.alt} />
-              </a>
-            </li>
+          {PlatformsMock.map((item) => (
+            <div key={item.id} onClick={() => handleCardClick(item.platform)}>
+              <Card
+                platformCardImage={item.image}
+                platformCardAlt={item.imageAlt}
+                platformCardTitle={item.platform}
+              />
+            </div>
           ))}
         </ul>
       </div>

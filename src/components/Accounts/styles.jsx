@@ -15,6 +15,7 @@ export const Container = styled.div`
     flex-direction: column;
     height: auto;
     width: 100%;
+    gap: 3rem;
 
     .games-group {
       display: flex;

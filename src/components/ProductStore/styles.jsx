@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
@@ -6,7 +6,7 @@ export const Container = styled.div`
   flex-direction: column;
   height: auto;
   width: 100%;
-  margin: 0rem;
+  margin: 8.125rem 0rem;
 
   .productGrid {
     display: flex;
@@ -21,4 +21,4 @@ export const Container = styled.div`
     flex: 1;
     gap: 2.5rem;
   }
-`
+`;

@@ -1,8 +1,13 @@
 import { MenuContainer } from './styles'
 import { HashLink as Link } from 'react-router-hash-link'
 import Logo from '@assets/images/logo.svg'
+import { Grip, LogOut, User } from 'lucide-react'
+import { useContext } from 'react'
+import { AuthContext } from '@context/AuthContext'
 
 export function Menu() {
+  const { signed, logOut } = useContext(AuthContext)
+
   const scrollWithOffset = (el, offset) => {
     const elementPosition = el.offsetTop - offset
     window.scroll({
@@ -23,8 +28,19 @@ export function Menu() {
         >
           <img src={Logo} alt="Logotipo do site Kadynn" />
         </Link>
-        <ul className="menu-text-group">
-          <li>
+        {signed ? (
+          <nav className="menu-text-group">
+            <Link
+              className="link"
+              to="/#"
+              smooth
+              scroll={(el) => scrollWithOffset(el, 160)}
+            >
+              Ver Site
+            </Link>
+          </nav>
+        ) : (
+          <nav className="menu-text-group">
             <Link
               className="link"
               to="/#contas"
@@ -33,8 +49,6 @@ export function Menu() {
             >
               Contas
             </Link>
-          </li>
-          <li>
             <Link
               className="link"
               to="/#loja"
@@ -43,8 +57,6 @@ export function Menu() {
             >
               Loja
             </Link>
-          </li>
-          <li>
             <Link
               className="link"
               to="/#games"
@@ -53,8 +65,6 @@ export function Menu() {
             >
               Games
             </Link>
-          </li>
-          <li>
             <Link
               className="link"
               to="/#noticias"
@@ -63,10 +73,27 @@ export function Menu() {
             >
               Notícias
             </Link>
-          </li>
-        </ul>
+          </nav>
+        )}
       </div>
-      <button className="menu-button">Login</button>
+      {signed ? (
+        <div className="menu-buttons">
+          <Link className="menu-button" to="/painel">
+            <Grip className="icon" />
+          </Link>
+          <Link className="menu-button" onClick={logOut}>
+            <LogOut className="icon" />
+            <p className="text">sair</p>
+          </Link>
+        </div>
+      ) : (
+        <div className="menu-buttons">
+          <Link className="menu-button" to="/login">
+            <User className="icon" />
+            <p className="text">Entrar</p>
+          </Link>
+        </div>
+      )}
     </MenuContainer>
   )
 }

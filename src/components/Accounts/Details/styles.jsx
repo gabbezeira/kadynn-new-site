@@ -38,17 +38,31 @@ export const Container = styled.div`
       justify-content: space-between;
       align-items: start;
       width: 100%;
+      gap: 1.125rem;
 
       .texts {
         display: flex;
         flex-direction: column;
-        gap: 0.25rem;
+        gap: 0.5rem;
         width: auto;
 
         .title {
           color: var(--white-color);
           font-size: 1.5rem;
           font-weight: 700;
+        }
+
+        .games {
+          display: flex;
+          justify-content: start;
+          width: 100%;
+          color: var(--secondary-color);
+          font-family: var(--poppins);
+          font-size: 0.875rem;
+          font-weight: 500;
+          text-decoration: none;
+          text-align: center;
+          white-space: nowrap;
         }
 
         .platforms {
@@ -59,16 +73,27 @@ export const Container = styled.div`
       }
 
       .priceButton {
-        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        min-height: 3.5rem;
         width: auto;
+
         padding: 0.3125rem 0.625rem;
         border-radius: 0.25rem;
         border: none;
+
         background-color: var(--secondary-color);
+
         color: var(--black-color);
         font-family: var(--poppins);
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 700;
+        text-decoration: none;
+        text-align: center;
+        white-space: nowrap;
+
         cursor: pointer;
         transition: all 0.2s;
 

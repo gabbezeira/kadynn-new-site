@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "platform": "Xbox One",
+    "image": "https://raw.githubusercontent.com/gabbezeira/kadynn-new-site/5527dfff47bedfb1a6a2a3a21da5e468223c6f9d/src/assets/images/platforms/1.svg",
+    "imageAlt": "Logo Xbox One"
+  },
+  {
+    "id": 2,
+    "platform": "Xbox Series S|X",
+    "image": "https://raw.githubusercontent.com/gabbezeira/kadynn-new-site/5527dfff47bedfb1a6a2a3a21da5e468223c6f9d/src/assets/images/platforms/2.svg",
+    "imageAlt": "Logo Xbox Series"
+  },
+  {
+    "id": 3,
+    "platform": "PS4",
+    "image": "https://raw.githubusercontent.com/gabbezeira/kadynn-new-site/5527dfff47bedfb1a6a2a3a21da5e468223c6f9d/src/assets/images/platforms/3.svg",
+    "imageAlt": "Logo PS4"
+  },
+  {
+    "id": 4,
+    "platform": "PS5",
+    "image": "https://raw.githubusercontent.com/gabbezeira/kadynn-new-site/5527dfff47bedfb1a6a2a3a21da5e468223c6f9d/src/assets/images/platforms/4.svg",
+    "imageAlt": "Logo PS5"
+  }
+]

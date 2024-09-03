@@ -37,7 +37,7 @@ export const Container = styled.li`
       background-size: cover;
       background-position: center;
 
-      border-radius: 0.5rem 0.5rem 0rem 0rem;
+      border-radius: 0.5rem;
     }
   }
 
@@ -107,6 +107,8 @@ export const Container = styled.li`
       .priceButton {
         height: auto;
         width: auto;
+
+        margin: 0;
 
         padding: 0.3125rem 0.625rem;
         border-radius: 0.25rem;

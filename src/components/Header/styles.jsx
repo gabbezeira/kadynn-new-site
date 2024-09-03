@@ -36,51 +36,63 @@ export const MenuContainer = styled.div`
       gap: 2rem;
       user-select: none;
 
-      li {
-        .link {
-          color: var(--white-color);
-          font-weight: 500;
-          font-size: 1rem;
-          text-decoration: none;
-          cursor: pointer;
-          transition: all 0.2s;
+      .link {
+        color: var(--white-color);
+        font-weight: 500;
+        font-size: 1rem;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.2s;
 
-          &:hover {
-            color: var(--secondary-color);
-          }
+        &:hover {
+          color: var(--secondary-color);
         }
       }
     }
   }
 
-  .menu-button {
+  .menu-buttons {
     display: flex;
     align-items: center;
+    justify-content: end;
+    flex-direction: row;
+    gap: 1rem;
 
-    height: 2.5rem;
-    width: auto;
+    .menu-button {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
 
-    padding: 0.5rem 0.875rem;
-    border-radius: 0.25rem;
-    border: none;
+      height: 2.5rem;
+      width: auto;
 
-    background-color: var(--secondary-color);
+      padding: 0.5rem;
+      border-radius: 0.25rem;
+      border: none;
 
-    color: var(--black-color);
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
+      background-color: var(--secondary-color);
 
-    transition: all 0.2s;
-    cursor: pointer;
+      text-transform: capitalize;
 
-    &:hover {
-      opacity: 0.8;
+      color: var(--black-color);
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+
+      text-decoration: none;
+
+      transition: all 0.2s;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
     }
   }
 
   @media (max-width: 640px) {
-    justify-content: center;
+    padding: 0px 2rem;
+    justify-content: space-between;
 
     .menu-left-content {
       justify-content: center;

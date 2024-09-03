@@ -1,35 +1,52 @@
+import React from 'react'
 import { Container } from './styles'
 import { Link } from 'react-router-dom'
 
-export function Card(props) {
+export function Card({
+  cardNumericId,
+  cardImage,
+  cardTitle,
+  cardPlatform,
+  cardPrice,
+}) {
+  const whatsappMessage = `Quero comprar a conta "${encodeURIComponent(cardTitle)}" por R$${encodeURIComponent(cardPrice)},00`
+  const whatsappUrl = `https://wa.me/5567993441076?text=${whatsappMessage}`
+
   return (
     <Container>
-      <Link to={`/accounts/details/${props.cardId}`} className="cardImageLink">
+      <Link to={`/accounts/details/${cardNumericId}`} className="cardImageLink">
         <div
           className="cardImage"
-          style={{ backgroundImage: `url(${props.cardImage})` }}
+          style={{ backgroundImage: `url(${cardImage})` }}
         />
       </Link>
       <div className="cardDetails">
         <div className="cardHeader">
           <Link
-            to={`/accounts/details/${props.cardId}`}
+            to={`/accounts/details/${cardNumericId}`}
             className="cardTitleLink"
           >
-            <h1 className="cardTitle">{props.cardTitle}</h1>
+            <h1 className="cardTitle">{cardTitle}</h1>
           </Link>
         </div>
         <div className="cardPlatform">
-          {props.cardPlatform.map((platform, index) => (
+          {cardPlatform.map((platform, index) => (
             <span key={index} className="platformItem">
               {platform}
-              {index < props.cardPlatform.length - 1 && ', '}
+              {index < cardPlatform.length - 1 && ', '}
             </span>
           ))}
         </div>
         <div className="cardFooter">
           <p className="priceText">Comprar por</p>
-          <button className="priceButton">{`R$ ${props.cardPrice}`}</button>
+          <a
+            href={whatsappUrl}
+            className="priceButton"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {`R$ ${cardPrice},00`}
+          </a>
         </div>
       </div>
     </Container>
