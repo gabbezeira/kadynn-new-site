@@ -3,12 +3,12 @@ import '@globalStyles/index.css'
 
 export const Container = styled.div`
   width: 100%;
-  height: 40.625rem;
+  height: 35rem;
   margin-top: 5rem;
   pointer-events: none;
   user-select: none;
 
-  background-position: center;
+  background-position: top;
 
   @media (max-width: 640px) {
     height: 31.25rem;

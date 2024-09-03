@@ -1,10 +1,15 @@
 import React from 'react'
-import { Login } from '@components'
+import { Login, Footer, Menu } from '@components'
+import { PageWrapper, Body } from '@globalStyles/styles'
 
 export function LoginPage() {
   return (
-    <>
-      <Login />
-    </>
+    <PageWrapper>
+      <Menu />
+      <Body>
+        <Login />
+      </Body>
+      <Footer />
+    </PageWrapper>
   )
 }

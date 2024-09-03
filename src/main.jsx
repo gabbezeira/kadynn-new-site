@@ -47,10 +47,6 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: 'login',
-        element: <LoginPage />,
-      },
-      {
         path: 'accounts/details/:numericId',
         element: <DetailsPage />,
       },
@@ -63,6 +59,10 @@ const router = createBrowserRouter([
         <PainelPage />
       </PrivateRoute>
     ),
+  },
+  {
+    path: 'login',
+    element: <LoginPage />,
   },
 ])
 
