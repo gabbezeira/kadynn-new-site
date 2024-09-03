@@ -23,6 +23,11 @@ export const FooterContainer = styled.div`
       width: auto;
       height: auto;
       user-select: none;
+
+      img {
+        height: 3.75rem;
+        width: auto;
+      }
     }
 
     .footer-left-texts {

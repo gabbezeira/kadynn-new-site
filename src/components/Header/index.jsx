@@ -1,6 +1,6 @@
 import { MenuContainer } from './styles'
 import { HashLink as Link } from 'react-router-hash-link'
-import Logo from '@assets/images/logo.svg'
+import Logo from '@assets/images/logo.png'
 import { Grip, LogOut, User } from 'lucide-react'
 import { useContext } from 'react'
 import { AuthContext } from '@context/AuthContext'

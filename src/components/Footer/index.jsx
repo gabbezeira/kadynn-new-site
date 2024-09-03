@@ -2,7 +2,7 @@ import { FooterContainer } from './styles'
 import { HashLink as Link } from 'react-router-hash-link'
 import Instagram from '@assets/social/instagram.svg'
 import Youtube from '@assets/social/youtube.svg'
-import Logo from '@assets/images/logo.svg'
+import Logo from '@assets/images/logo.png'
 
 export function Footer() {
   const scrollWithOffset = (el, offset) => {

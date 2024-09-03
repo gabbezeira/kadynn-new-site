@@ -19,7 +19,7 @@ export const MenuContainer = styled.div`
     align-items: center;
 
     height: 100%;
-    gap: 5rem;
+    gap: 2.5rem;
 
     .link-image {
       display: block;
@@ -27,6 +27,11 @@ export const MenuContainer = styled.div`
       width: auto;
       height: auto;
       user-select: none;
+
+      img {
+        height: 3.75rem;
+        width: auto;
+      }
     }
 
     .menu-text-group {
