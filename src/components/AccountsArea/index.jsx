@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Container } from './styles'
 import { useNavigate, Link } from 'react-router-dom'
 import GamesCard from '@/mocks/games-account.json'
@@ -7,6 +7,10 @@ import { Card } from './Card'
 
 export function AccountsArea() {
   const navigate = useNavigate()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   const handleCardClick = (game) => {
     const gameName = Array.isArray(game) ? game[0] : game

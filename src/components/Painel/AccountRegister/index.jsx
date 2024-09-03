@@ -1,5 +1,5 @@
 import React, { useContext, useState, useRef, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { api } from '@api'
 import { NotificationContext } from '@context/NotificationContext'
 import { Loader } from '@components/Loader'
@@ -35,6 +35,12 @@ export function AccountRegister() {
   const emojiPickerRef = useRef(null)
   const { showSnackbar } = useContext(NotificationContext)
   const navigate = useNavigate()
+
+  const location = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location.pathname])
 
   const formatDescription = (description) => {
     return description

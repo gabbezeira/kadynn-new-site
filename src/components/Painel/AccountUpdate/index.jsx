@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect, useRef } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import { useLocation, useNavigate, useParams } from 'react-router-dom'
 import { api } from '@api'
 import { NotificationContext } from '@context/NotificationContext'
 import { Loader } from '@components/Loader'
@@ -36,6 +36,12 @@ export function AccountUpdate() {
   const { showSnackbar } = useContext(NotificationContext)
   const navigate = useNavigate()
   const { numericId } = useParams()
+
+  const location = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location.pathname])
 
   useEffect(() => {
     const fetchAccountDetails = async () => {

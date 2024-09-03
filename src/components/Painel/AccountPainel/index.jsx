@@ -27,6 +27,10 @@ export function Accounts() {
   const { showSnackbar } = useContext(NotificationContext)
 
   useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location.pathname])
+
+  useEffect(() => {
     const fetchAccounts = async () => {
       try {
         const response = await axios.get(

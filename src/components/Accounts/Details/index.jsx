@@ -36,7 +36,6 @@ export function DetailsPage() {
     }
   }, [numericId])
 
-  // Verifica se o produto está carregado antes de gerar a URL
   const whatsappMessage = product
     ? `Quero comprar a conta "${encodeURIComponent(product.title)}" por R$${encodeURIComponent(product.price)},00`
     : ''

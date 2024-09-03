@@ -5,7 +5,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.jsx'
 import { Home } from '@pages/Home.jsx'
 import { Accounts } from '@components/Accounts/index.jsx'
-import { DetailsPage } from '@components/Accounts/Details/index.jsx'
 import { LoginPage } from '@pages/LoginPage.jsx'
 import { PainelPage } from '@pages/Painel.jsx'
 
@@ -13,8 +12,10 @@ import { NotificationProvider } from '@context/NotificationContext.jsx'
 import { PrivateRoute } from './routes/privateRoutes'
 import { AuthProvider } from '@context/AuthContext.jsx'
 import { ErrorPage } from '@pages/Error.jsx'
-import { AccountRegister } from '@components/Painel/AccountRegister/index.jsx'
-import { AccountUpdate } from '@components/Painel/AccountUpdate/index.jsx'
+import { AccountRegisterPage } from '@pages/AccountRegisterPage'
+import { AccountUpdatePage } from '@pages/AccountUpdatePage'
+import { DetailsPages } from '@pages/DetailsPage.jsx'
+import { AccountsPage } from './pages/AccountsPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -26,34 +27,19 @@ const router = createBrowserRouter([
         path: '/',
         element: <Home />,
       },
-      {
-        path: 'accounts',
-        element: <Accounts />,
-      },
-      {
-        path: 'addaccount',
-        element: (
-          <PrivateRoute>
-            <AccountRegister />
-          </PrivateRoute>
-        ),
-      },
-      {
-        path: 'accounts/updateaccount/:numericId',
-        element: (
-          <PrivateRoute>
-            <AccountUpdate />
-          </PrivateRoute>
-        ),
-      },
-      {
-        path: 'accounts/details/:numericId',
-        element: <DetailsPage />,
-      },
     ],
   },
   {
+    path: 'accounts',
+    element: <AccountsPage />,
+  },
+  {
+    path: 'accounts/details/:numericId',
+    element: <DetailsPages />,
+  },
+  {
     path: 'painel',
+    errorElement: <ErrorPage />,
     element: (
       <PrivateRoute>
         <PainelPage />
@@ -62,7 +48,26 @@ const router = createBrowserRouter([
   },
   {
     path: 'login',
+    errorElement: <ErrorPage />,
     element: <LoginPage />,
+  },
+  {
+    path: 'accounts/updateaccount/:numericId',
+    errorElement: <ErrorPage />,
+    element: (
+      <PrivateRoute>
+        <AccountUpdatePage />
+      </PrivateRoute>
+    ),
+  },
+  {
+    path: 'addaccount',
+    errorElement: <ErrorPage />,
+    element: (
+      <PrivateRoute>
+        <AccountRegisterPage />
+      </PrivateRoute>
+    ),
   },
 ])
 

@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Container } from './styles'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 export function Card({
   cardNumericId,
@@ -11,6 +11,12 @@ export function Card({
 }) {
   const whatsappMessage = `Quero comprar a conta "${encodeURIComponent(cardTitle)}" por R$${encodeURIComponent(cardPrice)},00`
   const whatsappUrl = `https://wa.me/5567993441076?text=${whatsappMessage}`
+
+  const location = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location.pathname])
 
   return (
     <Container>

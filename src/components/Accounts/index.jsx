@@ -21,6 +21,10 @@ export function Accounts() {
   const itemsPerPage = 8
 
   useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location.pathname])
+
+  useEffect(() => {
     const fetchAccounts = async () => {
       try {
         const response = await axios.get(
