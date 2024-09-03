@@ -78,7 +78,7 @@ export function Accounts() {
   const handleDelete = async (id) => {
     try {
       const token = localStorage.getItem('@Auth:token')
-      await axios.delete(`http://localhost:3001/accounts/${id}`, {
+      await axios.delete(`https://kadynn-api.vercel.app/accounts/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
