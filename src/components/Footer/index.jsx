@@ -1,6 +1,7 @@
 import { FooterContainer } from './styles'
 import { HashLink as Link } from 'react-router-hash-link'
-import { Instagram, Youtube } from 'lucide-react'
+import Instagram from '@assets/social/instagram.svg'
+import Youtube from '@assets/social/youtube.svg'
 import Logo from '@assets/images/logo.svg'
 
 export function Footer() {
@@ -28,7 +29,11 @@ export function Footer() {
       icon: Instagram,
       alt: 'Instagram',
     },
-    { href: 'https://www.youtube.com/@KADYNNS', icon: Youtube, alt: 'YouTube' },
+    {
+      href: 'https://www.youtube.com/@KADYNN886',
+      icon: Youtube,
+      alt: 'YouTube',
+    },
   ]
 
   return (
@@ -58,7 +63,15 @@ export function Footer() {
             ))}
           </ul>
           <p className="footer-copy-text">
-            &copy;{currentYear} Kadynn Level Up
+            &copy;{currentYear} Kadynn Level Up - feito por{' '}
+            <a
+              className="my-credits"
+              target="_blank"
+              href="https://instagram.com/gabbezeira"
+              rel="noreferrer"
+            >
+              Gabriel Alves 🤙
+            </a>
           </p>
         </div>
       </div>
@@ -73,7 +86,11 @@ export function Footer() {
                 rel="noreferrer"
                 aria-label={`Link para ${social.alt}`}
               >
-                <social.icon className="social-icon" />
+                <img
+                  src={social.icon}
+                  className="social-icon"
+                  alt={social.alt}
+                />
               </a>
             </li>
           ))}

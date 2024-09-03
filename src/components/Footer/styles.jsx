@@ -58,6 +58,12 @@ export const FooterContainer = styled.div`
       .footer-copy-text {
         color: var(--gray-color);
         font-size: 1rem;
+
+        .my-credits {
+          color: var(--white-color);
+          font-weight: 500;
+          text-decoration: none;
+        }
       }
     }
   }
@@ -69,7 +75,7 @@ export const FooterContainer = styled.div`
     .footer-social {
       display: flex;
       flex-direction: row;
-      gap: 0.875rem;
+      gap: 1.5rem;
       width: 100%;
 
       li {
@@ -78,7 +84,8 @@ export const FooterContainer = styled.div`
 
         .social-icon {
           color: var(--white-color);
-          height: 2.125rem;
+          height: 2.375rem;
+          width: auto;
           width: auto;
         }
       }
