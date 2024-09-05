@@ -8,12 +8,12 @@ export const PageWrapper = styled.div`
 `
 
 export const Body = styled.div`
+  flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: auto !important;
   gap: 7.25rem;
   padding: 5rem;
 

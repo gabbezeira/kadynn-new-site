@@ -4,7 +4,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import App from './App.jsx'
 import { Home } from '@pages/Home.jsx'
-import { Accounts } from '@components/Accounts/index.jsx'
 import { LoginPage } from '@pages/LoginPage.jsx'
 import { PainelPage } from '@pages/Painel.jsx'
 

@@ -1,7 +1,7 @@
-import { ProductCard } from "./Product";
-import Products from "../../mocks/products.json";
-import { Container } from "./styles";
-import { PageTitle } from "../PageTitle";
+import { ProductCard } from './Product'
+import Products from '../../mocks/products.json'
+import { Container } from './styles'
+import { PageTitle } from '../PageTitle'
 
 export function Store() {
   return (
@@ -19,5 +19,5 @@ export function Store() {
         ))}
       </div>
     </Container>
-  );
+  )
 }
