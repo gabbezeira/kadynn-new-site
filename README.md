@@ -27,4 +27,4 @@ Segunda versão do site que faço para o cliente, dessa vez integrado com uma AP
 [![YouTube Badge](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UC4pNKzi1GP58B0HZcWUhZyQ)
 [![Twitter Badge](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/gabrielberners)
 
-<p align="center">Copyright © 2021 Gabriel Alves</p>
+<p align="center">Copyright © 2024 Gabriel Alves</p>
