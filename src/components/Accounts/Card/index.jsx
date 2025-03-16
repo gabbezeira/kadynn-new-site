@@ -9,8 +9,8 @@ export function Card({
   cardPlatform,
   cardPrice,
 }) {
-  const whatsappMessage = `Quero comprar a conta "${encodeURIComponent(cardTitle)}" por R$${encodeURIComponent(cardPrice)},00`
-  const whatsappUrl = `https://wa.me/5567993441076?text=${whatsappMessage}`
+  const whatsappMessage = `Quero comprar a conta "${encodeURIComponent(cardTitle)}" para (${encodeURIComponent(cardPlatform.join(", "))}) por R$${encodeURIComponent(cardPrice)},00`;
+	const whatsappUrl = `https://wa.me/5567993441076?text=${whatsappMessage}`;
 
   const location = useLocation()
 
