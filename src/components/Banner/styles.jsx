@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import '@globalStyles/index.css'
+import styled from "styled-components";
+import "@globalStyles/index.css";
 
 export const Container = styled.div`
   width: 100%;
@@ -7,12 +7,12 @@ export const Container = styled.div`
   margin-top: 5rem;
   pointer-events: none;
   user-select: none;
-
-  background-position: center;
+  background-size: cover;
+  background-position: initial;
 
   @media (max-width: 640px) {
     height: 31.25rem;
     background-position: center;
     background-size: cover;
   }
-`
+`;
