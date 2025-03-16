@@ -2,6 +2,7 @@ import { PageTitle } from "@components/PageTitle";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+// biome-ignore lint/suspicious/noShadowRestrictedNames: <explanation>
 import { Error } from "../Error";
 import { Loader } from "../Loader";
 import { Pagination } from "../Pagination";

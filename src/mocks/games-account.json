@@ -1,26 +1,20 @@
 [
-  {
-    "id": 1,
-    "image": "https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/games/fob/640/GTAOnline.jpg",
-    "imageAlt": "Imagem da capa do jogo GTA Online",
-    "game": "GTA 5"
-  },
-  {
-    "id": 2,
-    "image": "https://wallpapers.com/images/hd/forza-horizon-4-digital-photo-91h7x36mh8dg54c3.jpg",
-    "imageAlt": "Imagem da capa do jogo Forza Horizon 4",
-    "game": "Forza Horizon 4"
-  },
-  {
-    "id": 3,
-    "image": "https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/games/fob/640/reddeadonline.jpg",
-    "imageAlt": "Imagem da capa do jogo Red Dead Redemption 2",
-    "game": "Red Dead Redemption 2"
-  },
-  {
-    "id": 4,
-    "image": "https://hips.hearstapps.com/hmg-prod/images/forzahorizon5-keyart-vert-rgb-final-1629720353.jpg",
-    "imageAlt": "Imagem da capa do jogo Forza Horizon 5",
-    "game": "Forza Horizon 5"
-  }
+	{
+		"id": 1,
+		"image": "https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/games/fob/640/GTAOnline.jpg",
+		"imageAlt": "Imagem da capa do jogo GTA Online",
+		"game": "GTA 5"
+	},
+	{
+		"id": 3,
+		"image": "https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/games/fob/640/reddeadonline.jpg",
+		"imageAlt": "Imagem da capa do jogo Red Dead Redemption 2",
+		"game": "Red Dead Redemption 2"
+	},
+	{
+		"id": 4,
+		"image": "https://hips.hearstapps.com/hmg-prod/images/forzahorizon5-keyart-vert-rgb-final-1629720353.jpg",
+		"imageAlt": "Imagem da capa do jogo Forza Horizon 5",
+		"game": "Forza Horizon 5"
+	}
 ]

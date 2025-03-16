@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import '@globalStyles/index.css'
+import styled from "styled-components";
+import "@globalStyles/index.css";
 
 export const Container = styled.li`
   display: flex;
@@ -9,7 +9,7 @@ export const Container = styled.li`
 
   max-height: 22.9375rem;
   height: 22.9375rem;
-  width: 18.125rem;
+  width: 15rem;
 
   padding: 1.125rem 0.875rem;
   gap: 1rem;
@@ -140,4 +140,4 @@ export const Container = styled.li`
     width: 100%;
     height: auto;
   }
-`
+`;
