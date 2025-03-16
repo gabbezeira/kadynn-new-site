@@ -37,7 +37,7 @@ export function DetailsPage() {
 	}, [numericId]);
 
 	const whatsappMessage = product
-		? `Quero comprar a conta "${encodeURIComponent(product.title)}" do jogo "${encodeURIComponent(product.game)}" para "${encodeURIComponent(cardPlatform.join(", "))}" por R$${encodeURIComponent(product.price)},00`
+		? `Quero comprar a conta "${encodeURIComponent(product.title)}" do jogo "${encodeURIComponent(product.game)}" para "${encodeURIComponent(product.platform.join(", "))}" por R$${encodeURIComponent(product.price)},00`
 		: "";
 	const whatsappUrl = `https://wa.me/5567993441076?text=${whatsappMessage}`;
 
