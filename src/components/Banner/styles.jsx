@@ -7,7 +7,8 @@ export const Container = styled.div`
   margin-top: 5rem;
   pointer-events: none;
   user-select: none;
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: top;
 
   @media (max-width: 640px) {
