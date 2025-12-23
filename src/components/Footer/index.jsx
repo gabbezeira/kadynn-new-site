@@ -1,6 +1,7 @@
 import Logo from "@assets/images/newlogo.png";
 import Instagram from "@assets/social/instagram.svg";
 import Youtube from "@assets/social/youtube.svg";
+import TikTok from "@assets/social/tiktok.png";
 import { HashLink as Link } from "react-router-hash-link";
 import { FooterContainer } from "./styles";
 
@@ -33,6 +34,11 @@ export function Footer() {
 			href: "https://www.youtube.com/@KADYNN886",
 			icon: Youtube,
 			alt: "YouTube",
+		},
+		{
+			href: "https://www.tiktok.com/@kadynnstore?_r=1&_t=ZS-92MfP1oBymT",
+			icon: TikTok,
+			alt: "TikTok",
 		},
 	];
 
