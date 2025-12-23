@@ -13,10 +13,9 @@ export const Container = styled.div`
 
     .games-group {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       flex-wrap: no-wrap;
-      gap: 2.5rem;
       flex: 1;
       width: 100%;
       height: 22.9375rem;
@@ -53,6 +52,8 @@ export const Container = styled.div`
     .content {
       .games-group {
         flex-wrap: wrap;
+        justify-content: center;
+        gap: 2.5rem;
       }
     }
   }
