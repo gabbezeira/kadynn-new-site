@@ -11,7 +11,7 @@ export default function App() {
 		<PageWrapper>
 			{isDecember && (
 				<Snowfall
-					snowflakeCount={120}
+					snowflakeCount={80}
 					style={{
 						position: "fixed",
 						width: "100vw",
