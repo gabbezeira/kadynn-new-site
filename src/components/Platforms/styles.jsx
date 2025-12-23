@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import '@globalStyles/index.css'
+import styled from "styled-components";
+import "@globalStyles/index.css";
 
 export const Container = styled.div`
   height: auto;
@@ -15,7 +15,7 @@ export const Container = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-wrap: wrap;
+      flex-wrap: no-wrap;
       gap: 2.5rem;
       flex: 1;
       width: 100%;
@@ -48,4 +48,12 @@ export const Container = styled.div`
       }
     }
   }
-`
+
+@media (max-width: 768px) {
+    .content {
+      .games-group {
+        flex-wrap: wrap;
+      }
+    }
+  }
+`;
